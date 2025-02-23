@@ -23,7 +23,7 @@ const AdminPanel = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/attendance/search", {
+      const response = await axios.get("https://employattentbackend.onrender.com/api/attendance/search", {
         params: { name: search.name, date: search.date },
       });
       setAttendance(response.data);
@@ -34,7 +34,7 @@ const AdminPanel = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/attendance/${id}`, { status });
+      await axios.put(`https://employattentbackend.onrender.com/api/attendance/${id}`, { status });
       fetchAttendance();
     } catch (error) {
       console.error("Error updating status:", error);
