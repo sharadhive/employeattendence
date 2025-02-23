@@ -1,0 +1,50 @@
+.attendance-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+ 
+  .animated-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s infinite alternate;
+    color: #3f51b5;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .attendance-container {
+      padding: 20px;
+      margin-top: 20px;
+    }
+  
+    .animated-text {
+      font-size: 1.5rem;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
