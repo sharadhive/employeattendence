@@ -14,7 +14,7 @@ const AdminPanel = () => {
 
   const fetchAttendance = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/attendance");
+      const response = await axios.get("https://employattentbackend.onrender.com/api/attendance");
       setAttendance(response.data);
     } catch (error) {
       console.error("Error fetching attendance:", error);
