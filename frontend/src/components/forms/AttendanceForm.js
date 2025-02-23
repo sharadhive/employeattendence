@@ -68,7 +68,7 @@ const AttendanceForm = ({ onClose }) => {
     e.preventDefault();
     // Photo is optional; submission proceeds even if no photo is captured.
     try {
-      const response = await axios.post("http://localhost:5000/api/attendance", formData);
+      const response = await axios.post("https://employattentbackend.onrender.com/api/attendance", formData);
       alert("Attendance submitted successfully!");
       console.log(response.data);
       onClose(); // Optionally close the form after successful submission
